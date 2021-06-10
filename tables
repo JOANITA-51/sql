@@ -1,0 +1,31 @@
+/*CREATe TABLE students (
+  id int(20) NOT NULL,
+  name VARCHAR(200),
+  
+  PRIMARY KEY (id)
+  );
+INSERT INTO students(id, name) 
+VALUES
+(1,'David'),
+(2,'James'),
+(3,'John');
+SELECT * FROM students;
+ALTER TABLE students MODIFY COLUMN id INT AUTO_INCREMENT;
+INSERT INTO students(name) 
+VALUES
+('Joanita'),
+('Jane'),
+('Jesca');
+SELECT * FROM students;
+CREATE TABLE results (
+  id int(20) AUTO_INCREMENT,
+  subject VARCHAR(100) NOT NULL,
+  marks INT(3),
+  PRIMARY KEY(id)
+);*/
+CREATE TABLE payments (
+  id int NOT NULL AUTO_INCREMENT,
+  PRIMARY KEY(id),
+  student_id INT NOT NULL,
+  amount INT(8)
+);
